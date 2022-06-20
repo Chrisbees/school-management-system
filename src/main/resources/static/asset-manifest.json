@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1aa98b51.css",
+    "main.js": "/static/js/main.d91826ed.js",
+    "static/js/787.195457f0.chunk.js": "/static/js/787.195457f0.chunk.js",
+    "static/media/Staff-5.jpg": "/static/media/Staff-5.9f395f482f4039119591.jpg",
+    "static/media/Staff-1.jpg": "/static/media/Staff-1.892cde422e553575fad0.jpg",
+    "static/media/Staff-4.jpg": "/static/media/Staff-4.b221300ce1b103b4d086.jpg",
+    "static/media/Staff-3.jpg": "/static/media/Staff-3.08f2a24331145fbcc758.jpg",
+    "static/media/studyhabit.png": "/static/media/studyhabit.cfd1af3d9d2c78fff50c.png",
+    "static/media/HeadShot.png": "/static/media/HeadShot.ffee444dac10d08c8f28.png",
+    "static/media/School.png": "/static/media/School.af948e0fe2ae4e73078f.png",
+    "static/media/Football.png": "/static/media/Football.dbee95f180e8b515669f.png",
+    "static/media/Coding.png": "/static/media/Coding.bddad0658ca0e4a1293c.png",
+    "static/media/China.png": "/static/media/China.fd4c89cabcc310eb23cb.png",
+    "static/media/Staff-2.jpg": "/static/media/Staff-2.733d419d00f1d61e43ac.jpg",
+    "index.html": "/index.html",
+    "static/media/fontawesome.css.map": "/static/media/fontawesome.css.2f6ee8f47d958c961f0d.map",
+    "main.1aa98b51.css.map": "/static/css/main.1aa98b51.css.map",
+    "main.d91826ed.js.map": "/static/js/main.d91826ed.js.map",
+    "787.195457f0.chunk.js.map": "/static/js/787.195457f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1aa98b51.css",
+    "static/js/main.d91826ed.js"
+  ]
+}
