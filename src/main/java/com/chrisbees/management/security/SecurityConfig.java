@@ -70,10 +70,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/**/*.svg",
                         "/**/*.jpg",
                         "/**/*.html",
-                        "/**/*.css",
-                        "/js/**",
-                        "/css/**",
-                        "/static/**"
+                        "/**/*.css"
+//                        "/js/**",
+//                        "/css/**",
+//                        "/static/**"
                 ).permitAll().antMatchers(SIGN_UP_URLS).permitAll()
                 .antMatchers(H2_URL).permitAll()
                 .anyRequest().authenticated();
@@ -84,9 +84,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
-//    @Override
-//    public void configure(WebSecurity web) throws Exception {
-//        web.ignoring().antMatchers(,"/js/**", "/css/**"
-//                "/static/**");
-//    }
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        web.ignoring().antMatchers("/js/**", "/css/**",
+                "/static/**");
+    }
 }
