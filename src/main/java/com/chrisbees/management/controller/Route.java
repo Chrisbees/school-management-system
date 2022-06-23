@@ -5,13 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class Route {
-
-    //regex to match url pattern for all requests except /api requests (i.e. /, /login, /register)
-    @RequestMapping(value = "{_:^((?!api).)*$}")
+ //non-restful routes here (e.g. login, register, etc.)
+    @RequestMapping("/")
     public String index() {
-        return "forward:/";
+        return "forward:/index.html";
     }
-
-    //route requests like /login, /register. /, to index.html
 
 }
