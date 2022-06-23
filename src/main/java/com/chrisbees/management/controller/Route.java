@@ -6,9 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class Route {
 
-        @RequestMapping(value = "/login, /register")
-        public String redirect() {
-            // Forward to home page so that angular routing is preserved.
-            return "forward:/index.html";
-        }
+    //regex to match url pattern for all requests except /api requests (i.e. /, /login, /register)
+    @RequestMapping(value = "/regex:[^/api]/**")
+    public String index() {
+        return "forward:/index.html";
     }
+
+    //route requests like /login, /register. /, to index.html
+
+}
