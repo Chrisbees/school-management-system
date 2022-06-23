@@ -13,9 +13,18 @@ public class Route implements WebMvcConfigurer {
  //redirect all request that are not /api to index.html
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("forward:/index.html");
+        registry.addViewController("/*/*").setViewName("forward:/index.html");
         registry.addViewController("/login").setViewName("forward:/index.html");
         registry.addViewController("/register").setViewName("forward:/index.html");
+        registry.addViewController("/dashboard").setViewName("forward:/index.html");
+        registry.addViewController("/allStaff").setViewName("forward:/index.html");
+        registry.addViewController("/allStaff").setViewName("forward:/index.html");
+        registry.addViewController("/addStaff").setViewName("forward:/index.html");
+        registry.addViewController("/updateStaff/").setViewName("forward:/index.html");
+        registry.addViewController("/addStudent").setViewName("forward:/index.html");
+        registry.addViewController("/updateStudent/").setViewName("forward:/index.html");
+
+
     }
 
 
