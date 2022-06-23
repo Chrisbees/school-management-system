@@ -10,12 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 
 @Configuration
 public class Route implements WebMvcConfigurer {
- //route all non-api requests to index.html
+ //regex expression to match all url paths without /api/ prefix to the index.html file
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("forward:/index.html");
+        registry.addViewController("/{[^\\.]*}").setViewName("forward:/index.html");
     }
-
-    
 
 }
